@@ -13,6 +13,8 @@
 		FE0D771B208BDE6100DF6FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0D7716208BDE6100DF6FC0 /* Assets.xcassets */; };
 		FE0D771C208BDE6100DF6FC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D7717208BDE6100DF6FC0 /* MainViewController.swift */; };
 		FE0D7720208BDF0E00DF6FC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE0D771F208BDF0E00DF6FC0 /* GoogleService-Info.plist */; };
+		FE0D7726208C22B200DF6FC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0D7725208C22B200DF6FC0 /* Main.storyboard */; };
+		FE0D772A208C267600DF6FC0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D7729208C267600DF6FC0 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +26,9 @@
 		FE0D7716208BDE6100DF6FC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE0D7717208BDE6100DF6FC0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FE0D771F208BDF0E00DF6FC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FE0D7721208BE2B600DF6FC0 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FE0D7722208BE2BB00DF6FC0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE0D7725208C22B200DF6FC0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FE0D7729208C267600DF6FC0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FEBAAB77208BD9A100D24806 /* Envirothon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Envirothon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,10 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				FE0D7723208BE2CE00DF6FC0 /* Supporting Files */,
-				FE0D7721208BE2B600DF6FC0 /* Main.storyboard */,
+				FE0D7725208C22B200DF6FC0 /* Main.storyboard */,
 				FE0D7714208BDE6100DF6FC0 /* Info.plist */,
 				FE0D771F208BDF0E00DF6FC0 /* GoogleService-Info.plist */,
 				FE0D7717208BDE6100DF6FC0 /* MainViewController.swift */,
+				FE0D7729208C267600DF6FC0 /* LoginViewController.swift */,
 			);
 			path = Envirothon;
 			sourceTree = "<group>";
@@ -162,6 +166,7 @@
 				FE0D771B208BDE6100DF6FC0 /* Assets.xcassets in Resources */,
 				FE0D7719208BDE6100DF6FC0 /* Info.plist in Resources */,
 				FE0D7720208BDF0E00DF6FC0 /* GoogleService-Info.plist in Resources */,
+				FE0D7726208C22B200DF6FC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,9 +214,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Envirothon/Pods-Envirothon-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/ChartsRealm/ChartsRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
@@ -222,9 +231,13 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartsRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
@@ -244,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0D772A208C267600DF6FC0 /* LoginViewController.swift in Sources */,
 				FE0D771A208BDE6100DF6FC0 /* AppDelegate.swift in Sources */,
 				FE0D771C208BDE6100DF6FC0 /* MainViewController.swift in Sources */,
 			);
@@ -374,10 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9525UTK57Q;
 				INFOPLIST_FILE = Envirothon/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coleturner.Envirothon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -393,10 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9525UTK57Q;
 				INFOPLIST_FILE = Envirothon/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coleturner.Envirothon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
